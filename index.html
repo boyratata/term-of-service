@@ -3,101 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/boyratata/Vancex.github.io/main/css/site.css">
-    <link rel="icon" href="https://github.com/boyratata/term-of-service/blob/main/icon.png" type="image/png">
+    <meta name="description" content="Terms of Service for Zeo Bot, an automod bot designed for Discord. Learn the conditions for using Zeo.">
+    <meta name="theme-color" content="#4f46e5">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boyratata.github.io/terms-of-service/">
+    <meta property="og:site_name" content="Zeo Bot Terms of Service">
+    <meta property="og:image" content="https://boyratata.github.io/terms-of-service/img/zeo-icon.png">
+    <meta property="og:title" content="Zeo Bot Terms of Service">
+    <meta property="og:description" content="Read the terms of service for Zeo Bot, an automod bot for Discord, to understand the conditions of use.">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/boyratata/Vancex.github.io/main/img/red.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/boyratata/terms-of-service/blob/main/favicon-32x32.png?raw=true">
+    <title>Terms of Service - Zeo Bot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/boyratata/Vancex.github.io@main/css/site.css">
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-image: url('https://raw.githubusercontent.com/boyratata/Vancex.github.io/main/img/space.jpg');
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://github.com/boyratata/privacy-policy/blob/main/wallxx.png?raw=true') no-repeat center center fixed;
             background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: #c026d3; /* Purple text color */
-            font-family: 'ui-sans-serif', system-ui, sans-serif;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-            z-index: -1;
+            color: #e2e8f0;
         }
         .container {
-            position: relative;
-            padding: 2rem;
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black for the content area */
-            border-radius: 0.5rem;
-            max-width: 800px;
-            margin: 2rem auto;
-            color: #c026d3; /* Purple text color */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto; /* Center the container */
+            padding: 20px;
+            background: rgba(45, 62, 80, 0.8); /* Semi-transparent background */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px); /* Optional: adds a blur effect to the background */
         }
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #c026d3; /* Purple text color */
-            background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8a2be2);
-            background-size: 600% 600%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: rainbowText 10s ease infinite;
-        }
-        @keyframes rainbowText {
-            0% { background-position: 0% 0%; }
-            100% { background-position: 100% 100%; }
-        }
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #c026d3; /* Purple text color */
+        h1, h2, h3 {
+            color: #cbd5e0;
         }
         p {
-            margin-bottom: 1rem;
             line-height: 1.6;
         }
         a {
-            color: #c026d3; /* Purple link color */
+            color: #38b2ac;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         a:hover {
+            color: #319795;
             text-decoration: underline;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .slide-up {
+            animation: slideUp 1s ease-out;
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+        }
+        .highlight {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(56, 189, 248, 0.2) 50%, rgba(0, 0, 0, 0) 100%);
+            background-size: 200% 100%;
+            animation: highlight 2s linear infinite;
         }
     </style>
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="container">
+    <div class="container fade-in">
         <header>
-            <h1 class="animate-text">Terms of Service for Zeo</h1>
+            <h1 class="text-4xl text-center mb-6">Terms of Service for Zeo Bot</h1>
         </header>
         <main>
-            <section class="mb-8">
-                <h2>Introduction</h2>
-                <p>Welcome to Zeo, your automated moderation bot! By using Zeo, you agree to the following terms and conditions.</p>
+            <section>
+                <h2 class="text-2xl mb-4">Introduction</h2>
+                <p class="slide-up">Welcome to Zeo, your automated moderation bot! By using Zeo, you agree to the following terms and conditions.</p>
             </section>
-            <section class="mb-8">
-                <h2>Acceptance of Terms</h2>
-                <p>By using Zeo, you agree to comply with and be bound by these Terms of Service. If you do not agree with these terms, do not use the bot.</p>
+            <section class="mt-8">
+                <h2 class="text-2xl mb-4">Acceptance of Terms</h2>
+                <p class="slide-up">By using Zeo, you agree to comply with and be bound by these Terms of Service. If you do not agree with these terms, do not use the bot.</p>
             </section>
-            <section class="mb-8">
-                <h2>Use of the Bot</h2>
-                <p>You agree to use Zeo in accordance with our guidelines and not to engage in any illegal or harmful activities. Zeo is designed to assist with moderation tasks and should not be used for malicious purposes.</p>
+            <section class="mt-8">
+                <h2 class="text-2xl mb-4">Use of the Bot</h2>
+                <p class="slide-up">You agree to use Zeo in accordance with our guidelines and not to engage in any illegal or harmful activities. Zeo is designed to assist with moderation tasks and should not be used for malicious purposes.</p>
             </section>
-            <section class="mb-8">
-                <h2>Contact</h2>
-                <p>If you have any questions or concerns, feel free to reach out to me on Discord: <a href="https://discord.com/users/1218777412364406906" target="_blank">Profile</a></p>
+            <section class="mt-8">
+                <h2 class="text-2xl mb-4">Modifications</h2>
+                <p class="slide-up">We reserve the right to modify or discontinue Zeo, or these Terms of Service, at any time. Any changes will be posted on this page, and your continued use of Zeo constitutes your acceptance of the modified terms.</p>
+            </section>
+            <section class="mt-8">
+                <h2 class="text-2xl mb-4">Contact</h2>
+                <p class="slide-up">If you have any questions or concerns, feel free to reach out to us on Discord: <a href="https://discord.com/users/1218777412364406906" target="_blank">Profile</a></p>
             </section>
         </main>
+        <footer class="mt-8 text-center text-sm text-neutral-400">
+            <p>© 2024 Zeo Bot. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
